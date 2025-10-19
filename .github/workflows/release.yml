@@ -8,6 +8,8 @@ on:
 jobs:
   build-and-release:
     runs-on: windows-latest # Use a Windows runner for building the Windows Forms app
+    permissions:
+      contents: write # Add this line to grant write access
 
     steps:
       - name: Checkout code
